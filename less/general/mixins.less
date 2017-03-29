@@ -3,8 +3,19 @@
 // ------------------------------------------ //
 .container {
 	&__container {
+		display: flex;
+
 		width: 100%;
-		max-width: 550px;
 		margin: 0 auto;
+
+		outline: 1px dashed lightgrey;
+
+		@media (min-width: @tablet-widths) {
+			max-width: @tablet-widths;
+		}
+
+		@media (min-width: @desktop-widths) {
+			max-width: @desktop-widths;
+		}
 	}
 }

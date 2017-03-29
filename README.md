@@ -1,4 +1,4 @@
-# deepweb
+# DeepWeb
 
 [![Build status][travis-image]][travis-url]
 
@@ -14,5 +14,5 @@
 	npm i  
 	npm run build
 
-[travis-image]: https://travis-ci.org/rogatnev-nikita/deepweb.github.io.svg?branch=master
-[travis-url]: https://travis-ci.org/rogatnev-nikita/deepweb.github.io
+[travis-image]: https://travis-ci.org/rogatnev-nikita/DeepWeb.github.io.svg?branch=master
+[travis-url]: https://travis-ci.org/rogatnev-nikita/DeepWeb.github.io

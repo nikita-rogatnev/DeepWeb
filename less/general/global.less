@@ -15,29 +15,27 @@ body {
 	min-height: 100vh;
 
 	color: @palette__primary;
-	background: url(../img/header/header__bg.png),
-	url(../img/footer/footer__bg.png),
-	@palette__tertiary url(../img/main/main__bg.png);
-	background-repeat: no-repeat, no-repeat, no-repeat;
-	background-position: 25% 10%, center bottom, center center;
-	background-size: 75%, contain, cover;
+	background: @palette__tertiary;
 
 	font-family: "BrutalType", Arial, sans-serif;
 
 	-webkit-font-smoothing: antialiased;
 }
 
-img {
-	width: 100%;
-	height: auto;
-}
+a {
+	text-decoration: none;
 
-.visible {
-	display: block !important;
-}
+	color: @palette__accent;
+	outline: none;
 
-.hidden {
-	display: none !important;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+
+		color: @palette__accent;
+		border-bottom: 1px solid @palette__accent;
+		outline: none;
+	}
 }
 
 ::-webkit-input-placeholder {

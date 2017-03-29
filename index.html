@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>deepweb</title>
+    <title>DeepWeb</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
@@ -27,20 +27,41 @@
 
 <body>
 
-    <!-- MAIN -->
-    <main class="main">
-        <div class="main__container">
+    <!-- PRELOADER -->
+    <div id="hellopreloader">
+        <div class="preloader" id="preloader"></div>
+    </div>
+    <!-- PRELOADER END -->
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__container">
 
             <!-- LOGO -->
             <div class="logo">
-                <a><img src="./img/logo/logo.png" alt="deepweb logo" width="190" height="273"></a>
+                <a><img src="./img/logo/logo.png" alt="DeepWeb logo" width="190" height="273"></a>
             </div>
             <!-- LOGO END -->
 
-            <h1>deepweb</h1>
-            <p>deepweb deepweb deepweb deepweb deepweb</p>
+            <!-- NAVIGATION -->
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">HIRE ME</a></li>
+                </ul>
+            </nav>
+            <!-- NAVIGATION END -->
 
+        </div>
+    </header>
+    <!-- HEADER END -->
 
+    <!-- MAIN -->
+    <main class="main">
+        <div class="main__container">
+            <h1>DeepWeb</h1>
+            <p>DeepWeb DeepWeb DeepWeb DeepWeb DeepWeb</p>
         </div>
     </main>
     <!-- MAIN END -->
@@ -49,13 +70,32 @@
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__copyright">
-                <p>Copyright &copy; 2017 deepweb. Design by <a href="#">Rogatnev Studio</a></p>
+                <p>&copy; 2017 DeepWeb. Design by <a href="http://rogatnev.ru/">Rogatnev Studio</a></p>
             </div>
         </div>
     </footer>
     <!-- FOOTER END -->
 
     <!-- SCRIPTS -->
+    <script>
+var hellopreloader = document.getElementById("preloader");
+
+function fadeOutnojquery(el) {
+    el.style.opacity = 1;
+    var interhellopreloader = setInterval(function() {
+        el.style.opacity = el.style.opacity - 0.05;
+        if (el.style.opacity <= 0.05) {
+            clearInterval(interhellopreloader);
+            hellopreloader.style.display = "none";
+        }
+    }, 16);
+}
+window.onload = function() {
+    setTimeout(function() {
+        fadeOutnojquery(hellopreloader);
+    }, 1000);
+};
+    </script>
     <!-- SCRIPTS END -->
 
 </body>

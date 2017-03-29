@@ -1,18 +1,18 @@
 {
-    "name": "deepweb",
+    "name": "DeepWeb",
     "version": "0.1.0",
-    "description": "deepweb",
+    "description": "DeepWeb",
     "author": "Rogatnev Nikita",
     "repository": {
         "type": "git",
-        "url": "git@github.com:rogatnev-nikita/deepweb.git"
+        "url": "git@github.com:rogatnev-nikita/DeepWeb.git"
     },
 
     "bugs": {
-        "url": "https://github.com/rogatnev-nikita/deepweb/issues"
+        "url": "https://github.com/rogatnev-nikita/DeepWeb/issues"
     },
 
-    "homepage": "https://github.com/rogatnev-nikita/deepweb",
+    "homepage": "https://github.com/rogatnev-nikita/DeepWeb",
 
     "devDependencies": {
         "editorconfig-tools": "^0.1.1",
