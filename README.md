@@ -1,5 +1,7 @@
 # deepweb
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rogatnev-nikita/deepweb.svg)](https://greenkeeper.io/)
+
 [![Build status][travis-image]][travis-url]
 
 ## Project summary
